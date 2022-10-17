@@ -7,13 +7,14 @@
 int main(void)
 {
 	int n = 0;
+	char a;
 
 	while (n < 10)
 	{
 		putchar((n % 10) + '0');
 		n++;
 	}
-	char a = 'a';
+	a = 'a';
 
 	do {
 		putchar(a);
