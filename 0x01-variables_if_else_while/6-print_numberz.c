@@ -6,7 +6,8 @@
 */
 int main(void)
 {
-	long n = 0;
+	int n = 0;
+
 	while (n < 10)
 	{
 		putchar((n % 10) + '0');
