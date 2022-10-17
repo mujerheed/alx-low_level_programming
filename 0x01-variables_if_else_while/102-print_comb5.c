@@ -6,16 +6,18 @@
 */
 int main(void)
 {
-	for (int i = 0; i <= 99; i++)
+	int a, b;
+
+	for (int a = 0; a <= 99; a++)
 	{
-		for (int j = i + 1; j < 100; j++)
+		for (int b = a + 1; b < 100; b++)
 		{
-			putchar((i / 10) + '0');
-			putchar((i % 10) + '0');
+			putchar((a / 10) + '0');
+			putchar((a % 10) + '0');
 			putchar(' ');
-			putchar((j / 10) + '0');
-			putchar((j % 10) + '0');
-			if ((i != 98) || (j != 99))
+			putchar((b / 10) + '0');
+			putchar((b % 10) + '0');
+			if ((a != 98) || (b != 99))
 			{
 				putchar(',');
 				putchar(' ');
