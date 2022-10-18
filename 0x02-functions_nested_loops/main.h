@@ -16,4 +16,13 @@ int _islower(int);
 /* _isalpha - function 3 */
 int _isalpha(int);
 
+/* print_sign - funtion 4 */
+int print_sign(int);
+
+/* _abs - funtion 5 */
+int _abs(int);
+
+/* print_last_digit - function 6 */
+int print_last_digit(int);
+
 #endif
