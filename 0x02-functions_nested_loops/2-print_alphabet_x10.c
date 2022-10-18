@@ -1,7 +1,8 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- *print_alphabet - function that prints 10x 10x 10x 10x 10x 10x 10x 10x 10x 10x the alphabet in lowercase
+ *print_alphabet_x10 - function that prints 10x the alphabet in lowercase
 */
 void print_alphabet_x10(void)
 {
