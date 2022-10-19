@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * sum_even_fibonacci - function that print sum of 
- fibonacci series that did not exceed 4mil
+ * sum_even_fibonacci - function that print sum of
+ *fibonacci series that did not exceed 4mil
  * @n: n as integer
  */
 void sum_even_fibonacci(int n)
