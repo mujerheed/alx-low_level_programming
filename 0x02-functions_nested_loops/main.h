@@ -34,4 +34,10 @@ void times_table(void);
 /* add - function 9 */
 int add(int, int);
 
+/* print_to_98 - function 10 */
+void print_to_98(int n);
+
+/* print_times_table - function 11 */
+void print_times_table(int n);
+
 #endif
