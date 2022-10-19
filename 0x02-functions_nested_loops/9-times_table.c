@@ -13,7 +13,6 @@ void times_table(void)
 		for (b = 0; b < 10; b++)
 		{
 			mul = a * b;
-			_putchar(mul / 10 + 48);
 			_putchar(mul % 10 + 48);
 			if (b != 9)
 			{
