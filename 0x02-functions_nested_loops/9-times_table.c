@@ -20,7 +20,7 @@ void times_table(void)
 				_putchar(mul / 10 + 48);
 				_putchar(mul % 10 + 48);
 			}
-			else if (mul < 10 && b != 0)
+			else if (mul < 10 && b == 0)
 			{
 				_putchar(',');
 				_putchar(' ');
