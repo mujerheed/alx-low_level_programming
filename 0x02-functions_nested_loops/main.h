@@ -25,4 +25,10 @@ int _abs(int);
 /* print_last_digit - function 6 */
 int print_last_digit(int);
 
+/* jack_bauer - function 7*/
+void jack_bauer(void);
+
+/* times_table - function 8 */
+void times_table(void);
+
 #endif
