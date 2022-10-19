@@ -15,12 +15,16 @@ void times_table(void)
 			mul = a * b;
 			if (mul >= 10)
 			{
+				_put(',');
 				_putchar(' ');
 				_putchar(mul / 10 + 48);
 				_putchar(mul % 10 + 48);
 			}
 			else
+			{
+				_putchar(' ');
 				_putchar (mul + 48);
+			}
 			if (b != 9)
 			{
 				_putchar(',');
