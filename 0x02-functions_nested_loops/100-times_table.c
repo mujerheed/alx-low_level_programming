@@ -21,7 +21,7 @@ void print_times_table(int n)
 				_putchar(mul + '0');
 			}
 
-			if (mul >= 10)
+			if (mul >= 10 && mul < 100)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -37,7 +37,7 @@ void print_times_table(int n)
 				_putchar(' ');
 				_putchar (mul + 48);
 			}
-			else if (k >= 100)
+			else if (mul >= 100)
 			{
 				_putchar(',');
 				_putchar(' ');
