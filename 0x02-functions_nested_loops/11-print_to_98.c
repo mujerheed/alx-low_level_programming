@@ -35,8 +35,3 @@ void print_to_98(int n)
 		putchar('\n');
 	}
 }
-int main(void)
-{
-	print_to_98(-111);
-	return (0);
-}
