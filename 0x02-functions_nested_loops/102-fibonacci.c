@@ -10,13 +10,13 @@ void fibonacci(int n)
 	int i;
 
 	printf("%lu, %lu, ", a, b);
-	for (i = 1; i < n; i++)
+	for (i = 1; i < (n - 1); i++)
 	{
 		next = a + b;
 		printf("%lu", next);
 		a = b;
 		b = next;
-		if (i != (n - 1))
+		if (i != (n - 2))
 		{
 			printf(", ");
 		}
