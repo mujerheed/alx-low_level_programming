@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 /**
- * sum_even_fibonacci - function that print sum of fibonacci series that did not exceed 4mil
+ * sum_even_fibonacci - function that print sum of 
+ fibonacci series that did not exceed 4mil
  * @n: n as integer
  */
 void sum_even_fibonacci(int n)
 {
-	unsigned long int a = 1, b = 2, next, sum = 0;
+	long int a = 1, b = 2, next, sum = 2;
 	int i;
 
-	for (i = 1; i < (n - 1); i++)
+	for (i = 1; i < n; i++)
 	{
 		next = a + b;
 		if ((next % 2 == 0) && next <= 4000000)
@@ -19,7 +20,7 @@ void sum_even_fibonacci(int n)
 		a = b;
 		b = next;
 	}
-	printf("%lu", sum);
+	printf("%ld", sum);
 	putchar('\n');
 }
 
