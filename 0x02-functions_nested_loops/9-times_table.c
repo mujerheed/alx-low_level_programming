@@ -22,6 +22,8 @@ void times_table(void)
 			}
 			else if (mul < 10 && b != 0)
 			{
+				_putchar(',');
+				_putchar(' ');
 				_putchar(' ');
 				_putchar (mul + 48);
 			}
