@@ -6,20 +6,20 @@
  */
 void fibonacci(int n)
 {
-	long int a = 1, b = 2;
-	long int i, next;
-	
-	printf("%ld, %ld, ", a, b);
+	unsigned long int a = 1, b = 2, next;
+	int i;
+
+	printf("%u, %u, ", a, b);
 	for (i = 1; i < n; i++)
 	{
-		printf("%ld", next);
-		if (i < n)
+		next = a + b;
+		printf("%u", next);
+		a = b;
+		b = next;
+		if (i != (n - 1))
 		{
 			printf(", ");
 		}
-		next = a + b;
-		a = b;
-		b = next;
 	}
 	putchar('\n');
 }
