@@ -9,11 +9,11 @@ void fibonacci(int n)
 	unsigned long int a = 1, b = 2, next;
 	int i;
 
-	printf("%u, %u, ", a, b);
+	printf("%lu, %lu, ", a, b);
 	for (i = 1; i < n; i++)
 	{
 		next = a + b;
-		printf("%u", next);
+		printf("%lu", next);
 		a = b;
 		b = next;
 		if (i != (n - 1))
