@@ -13,7 +13,13 @@ void times_table(void)
 		for (b = 0; b < 10; b++)
 		{
 			mul = a * b;
-			printf("%d", mul);
+			if (mul >= 10)
+			{
+				_putchar(mul / 10 + 48);
+				_putchar(mul % 10 + 48);
+			}
+			else
+				_putchar (mul + 48);
 			if (b != 9)
 			{
 				_putchar(',');
