@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-	unsigned long long int a = 1, b = 2, next;
+	unsigned long int a = 1, b = 2, next;
 	int i;
 
-	printf("%llu, %llu, ", a, b);
+	printf("%lu, %lu, ", a, b);
 	for (i = 1; i < 98; i++)
 	{
 		next = a + b;
-		printf("%llu", next);
+		printf("%lu", next);
 		a = b;
 		b = next;
 		if (i != 97)
