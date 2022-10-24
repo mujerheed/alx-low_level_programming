@@ -1,6 +1,7 @@
 #ifndef _MAIN_HEADER_H_
 #define _MAIN_HEADER_H_
 
+#include <stdio.h>
 /* _puchar - function general */
 int _putchar(char);
 
@@ -21,5 +22,17 @@ void more_numbers(void);
 
 /* print_liine - function 6 */
 void print_line(int n);
+
+/* print_diagonal - function 7 */
+void print_diagonal(int n);
+
+/* print_square - function 8 */
+void print_square(int size);
+
+/* print_triangle - function 9 */
+void print_triangle(int size);
+
+/* print_number - function 10 */
+void print_number(int n);
 
 #endif
