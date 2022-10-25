@@ -12,6 +12,12 @@ void print_numbers(void)
 	while (n <= 9)
 	{
 		_putchar(n + 48);
+		n++;
 	}
 	_putchar('\n');
+}
+int main(void)
+{
+    print_numbers();
+    return (0);
 }
