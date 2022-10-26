@@ -8,10 +8,13 @@
 void rev_string(char *s)
 {
 	int m;
+	char *n = NULL;
 
 	for (m = strlen(s) - 1; m >= 0; m--)
 	{
-		_putchar(*(s + m));
+		n[m + 1] = s[m];
+		s[m] = n[m];
+		s[m + 1] = n[m];
 	}
 	_putchar('\n');
 }
