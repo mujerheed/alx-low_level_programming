@@ -9,7 +9,7 @@
 
 int _atoi(char *s)
 {
-	int g = 0, res = 0, a = 0, b = -1;
+	int g = 0, res = 0, b = -1;
 
 	while (g < strlen(s))
 	{
