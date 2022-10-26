@@ -11,16 +11,16 @@
 
 int main(void)
 {
-	int randomizer;
+	int random;
 	int count;
 	int total;
 
 	srand(time(NULL));
 	for (count = 0, total = 2772; total > 122; count++)
 	{
-		randomizer = (randomizer() % 125) + 1;
-		printf("%c", randomizer);
-		total -= randomizer;
+		random = (rand() % 125) + 1;
+		printf("%c", random);
+		total -= random;
 	}
 	printf("%c", total);
 
