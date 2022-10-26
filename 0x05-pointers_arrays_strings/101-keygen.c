@@ -3,10 +3,8 @@
 #include <time.h>
 
 /**
- * main - entry point
- *
+ * main - function that crack random password
  * Return: Always zero
- *
  */
 
 int main(void)
