@@ -6,17 +6,23 @@
  */
 void more_numbers(void)
 {
-	int p = 0, q = 0;
+	int p = 0, q;
 
 	while (p < 10)
 	{
+		q = 0;
 		while (q <= 14)
 		{
-			_putchar(q + '0');
+			if (q > 9)
+			{
+				_putchar(q / 10 + '0');
+				_putchar(q % 10 + '0');
+			}
+			else
+				_putchar(q + '0');
 			q++;
 		}
 		_putchar('\n');
 		p++;
 	}
-	_putchar('\n');
 }
