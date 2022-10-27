@@ -5,6 +5,7 @@
 /* _puchar - function general */
 int _putchar(char);
 
+int mul(int, int);
 /* _isupper - function 1 */
 int _isupper(int c);
 
