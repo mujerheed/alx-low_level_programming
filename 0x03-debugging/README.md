@@ -1,1 +1,1 @@
-The project that works basically on Debugging code that is to fix and find a fault in the code base for it to run as expected
+The project fot debugging errors in the code that is by finding and fixing the bugs that prevent it from running currectly.
