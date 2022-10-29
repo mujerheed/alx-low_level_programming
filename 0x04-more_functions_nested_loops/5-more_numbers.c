@@ -26,8 +26,3 @@ void more_numbers(void)
 		p++;
 	}
 }
-int main(void)
-{
-    more_numbers();
-    return (0);
-}
