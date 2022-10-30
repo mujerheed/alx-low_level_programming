@@ -23,6 +23,6 @@ int main(void)
 			max = num;
 		}
 	}
-	printf("%ld \n", max);
+	printf("%ld\n", max);
 	return (0);
 }
