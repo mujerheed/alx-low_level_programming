@@ -20,7 +20,7 @@ int main(void)
 		while (num % i == 0)
 		{
 			num = num / i;
-			max = i;
+			max = num;
 		}
 	}
 	printf("%ld \n", max);
