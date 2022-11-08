@@ -7,18 +7,30 @@
  */
 void print_number(int n)
 {
-	unsigned int p;
+	unsigned int u = n;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		p *= -1;
+		u *= -1;
 	}
 
-	p = n;
+	if (u / 10)
+		print_number(u / 10);
 
-	if (p / 10)
-		print_number(p / 10);
-
-	_putchar(p % 10 + '0');
+	_putchar(u % 10 + '0');
+}
+int main(void)
+{
+    print_number(98);
+    _putchar('\n');
+    print_number(402);
+    _putchar('\n');
+    print_number(1024);
+    _putchar('\n');
+    print_number(0);
+    _putchar('\n');
+    print_number(-98);
+    _putchar('\n');
+    return (0);
 }
