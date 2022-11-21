@@ -8,24 +8,25 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int a = 0, b = 0;
+	int a = 0, b;
 	unsigned int len = 0;
 
 	while (*(s + a) != '\0')
 	{
-		while (*(accept + b) != '\0')
+		if (s[a] != 32)
 		{
-			if (*(s + a) == *(accept + b))
+			b = 0;
+			while (*(accept + b) != '\0')
 			{
-				len += 1;
-				break;
+				if (*(s + a) == *(accept + b))
+				{
+					len += 1;
+				}
+			++b;
 			}
-			b++;
 		}
-		if (*(s + b) == '\0')
-		{
+		else
 			return (len);
-		}
 		a++;
 	}
 	return (len);
