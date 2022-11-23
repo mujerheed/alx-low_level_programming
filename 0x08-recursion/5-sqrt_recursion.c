@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _sqrt: function to test th square root
+ * _sqrt - function to test th square root
  * @a: number passed
  * @temp: number to test
  * Return: tested sqrt
