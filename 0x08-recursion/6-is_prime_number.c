@@ -12,7 +12,7 @@ int _prime(int num, int div)
 		return (0);
 	else if (div == num / 2)
 		return (1);
-	
+
 	return (_prime(num, div + 1));
 }
 
