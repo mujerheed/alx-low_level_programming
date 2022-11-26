@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 			temp = conv / arr[index];
 			conv = conv - (temp * arr[index]);
 			coin += temp;
-		
+
 			index++;
 		}
 	}
