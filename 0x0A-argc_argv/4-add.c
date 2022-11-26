@@ -11,22 +11,23 @@
 
 int main(int argc, char **argv)
 {
-	int i, add = 0;
+	int i = 1, d, add = 0;
 
-	for (i = 1; i < argc; i++)
+	while (i < argc)
 	{
-		int num = atoi(*(argv + i));
+		for (d = 0; argv[i][d] != '\0'; d++)
+		{
+			if (argv[i][d] < '0' || argv[i][d] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
 
-		if ((num > 0 || num < 0) && num != 0)
-		{
-			add += num;
-		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		add += atoi(*(argv + i));
+		++i;
 	}
+
 	printf("%d\n", add);
 
 	return (0);
